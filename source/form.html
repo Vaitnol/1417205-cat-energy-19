@@ -32,6 +32,104 @@
 
     <main class="page-main">
 
+      <section class="application">
+        <form class="form-wrapper" method="post" action="from.php">
+        <fieldset class="form">
+          <legend class="form__title">Подбор программы</legend>
+          <p class="form__header">
+            Заполните анкету и мы подберем
+            программу питания для вашего кота
+          </p>
+          <label class="form__name" for="name">
+            Имя:*
+            <input class="form__name--input" type="text" id="name" placeholder="Барсик" required>
+          </label>
+          <label class="form__weight" for="weight">
+            Вес (кг):*
+            <input class="form__weight--input" type="text" id="weight" placeholder="7" required>
+          </label>
+          <label class="form__age" for="age">
+            Возраст (лет):
+            <input class="form__age--input" type="text" id="age" placeholder="7">
+          </label>
+          <hr class="form__line">
+          <label class="form__radio" for="losing-weight">
+            <input class="form__radio--input" type="radio" id="losing-weight">
+            Похудение
+          </label>
+          <label class="form__radio" for="mass">
+            <input class="form__radio--input" type="radio" id="mass">
+            Набор массы
+          </label>
+          <label class="form__radio" for="advice">
+            <input class="form__radio--input" type="radio" id="advice">
+            Не знаю (Нужен ваш совет)
+          </label>
+        </fieldset>
+        <fieldset class="form">
+          <legend class="form__title">
+            Контактные данные
+            (владельца кота)
+          </legend>
+          <label class="form__email" for="weight">
+            E-mail:*:
+            <input class="form__email--input" type="text" name="weight" placeholder="kuklachev@gmail.com" required>
+          </label>
+          <label class="form__phone" for="age">
+            Телефон:*
+            <input lass="form__phone--input" type="text" name="age" placeholder="8 (960) 900-60-90" required>
+          </label>
+        </fieldset>
+        <fieldset class="form">
+          <legend class="form__title">
+            Комментарий
+          </legend>
+          <textarea class="form__comments" name="" id="" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="form">
+          <legend class="form__title">
+            Дополнительно
+          </legend>
+          <label class="form__checkbox">
+            <input class="form__checkbox--input" type="checkbox" checked>
+            Сахарозаменитель
+          </label>
+          <label class="form__checkbox">
+            <input class="form__checkbox--input" type="checkbox">
+            Питьевая вода
+          </label>
+          <label class="form__checkbox">
+            <input class="form__checkbox--input" type="checkbox">
+            Молоко
+          </label>
+          <label class="form__checkbox">
+            <input class="form__checkbox--input" type="checkbox">
+            Витамины
+          </lab>
+        </fieldset>
+        <input class="button form__button" type="submit" value="отправить заявку">
+        <p class="form__note">
+          * — Обязательные поля
+        </p>
+        </form>
+      </section>
+
+      <section class="cooperation">
+        <p class="cooperation__invitation">
+          приглашаем
+          к сотрудничеству
+          дилеров!
+        </p>
+        <p class="cooperation__address">
+          ул. Большая Конюшенная, д. 19/8
+          Санкт-Петербург
+        </p>
+      </section>
+
+      <section class="map">
+
+      </section>
+
     </main>
 
     <footer class="page-footer">
