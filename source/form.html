@@ -32,14 +32,13 @@
 
     <main class="page-main">
 
-      <section class="application">
-        <form class="form-wrapper" method="post" action="from.php">
+      <form class="form-wrapper" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="form">
-          <legend class="form__title">Подбор программы</legend>
-          <p class="form__header">
+          <h1 class="form__title">Подбор программы</h1>
+          <legend class="form__header">
             Заполните анкету и мы подберем
             программу питания для вашего кота
-          </p>
+          </legend>
           <label class="form__name" for="name">
             Имя:*
             <input class="form__name--input" type="text" id="name" placeholder="Барсик" required>
@@ -54,15 +53,15 @@
           </label>
           <hr class="form__line">
           <label class="form__radio" for="losing-weight">
-            <input class="form__radio--input" type="radio" id="losing-weight">
+            <input class="form__radio--input" name="radio" type="radio" id="losing-weight">
             Похудение
           </label>
           <label class="form__radio" for="mass">
-            <input class="form__radio--input" type="radio" id="mass">
+            <input class="form__radio--input" name="radio" type="radio" id="mass">
             Набор массы
           </label>
           <label class="form__radio" for="advice">
-            <input class="form__radio--input" type="radio" id="advice">
+            <input class="form__radio--input" name="radio" type="radio" id="advice">
             Не знаю (Нужен ваш совет)
           </label>
         </fieldset>
@@ -73,11 +72,11 @@
           </legend>
           <label class="form__email" for="weight">
             E-mail:*:
-            <input class="form__email--input" type="text" name="weight" placeholder="kuklachev@gmail.com" required>
+            <input class="form__email--input" type="email" name="weight" placeholder="kuklachev@gmail.com" required>
           </label>
           <label class="form__phone" for="age">
             Телефон:*
-            <input lass="form__phone--input" type="text" name="age" placeholder="8 (960) 900-60-90" required>
+            <input lass="form__phone--input" type="tel" name="age" placeholder="8 (960) 900-60-90" required>
           </label>
         </fieldset>
         <fieldset class="form">
@@ -105,14 +104,13 @@
           <label class="form__checkbox">
             <input class="form__checkbox--input" type="checkbox">
             Витамины
-          </lab>
+          </label>
         </fieldset>
         <input class="button form__button" type="submit" value="отправить заявку">
         <p class="form__note">
           * — Обязательные поля
         </p>
-        </form>
-      </section>
+      </form>
 
       <section class="cooperation">
         <p class="cooperation__invitation">
