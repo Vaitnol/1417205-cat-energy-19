@@ -1,0 +1,330 @@
+@font-face {
+  font-family: "Oswald";
+  src: url('../fonts/oswaldregular.woff2') format('woff2'), url('../fonts/oswaldregular.woff') format('woff');
+}
+body {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+h1 {
+  margin: 0;
+}
+.page-header {
+  min-width: 65px;
+  padding: 11px 20px 15px 20px;
+}
+.page-header .main-nav .site-list .site-list__item {
+  list-style: none;
+  height: 65px;
+}
+.page-header .main-nav .site-list .site-list__item a {
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  color: #111111;
+  text-decoration: none;
+}
+.promo .promo__header {
+  background: url(../img/index-background-mobile@1x.jpg) no-repeat;
+  width: 100%;
+  height: 305px;
+  border-top: 1px solid white;
+}
+.promo .promo__slogan {
+  font-size: 36px;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+  margin: 29px 37px 19px 37px;
+}
+.promo .promo__intro {
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 61px 29px 61px;
+}
+.promo img {
+  margin-top: -138px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.promo .promo__button {
+  font-family: "Oswald", sans-serif;
+  margin: 3px 20px 22px 20px;
+  background-color: #68b738;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
+}
+.programms .programm-diet {
+  background-color: #f2f2f2;
+  width: 280px;
+  height: 266px;
+  margin: 0 auto;
+}
+.programms .programm-diet .programm-diet__circle {
+  width: 50px;
+  height: 51px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+.programms .programm-diet .programm-diet__title {
+  font-size: 24px;
+  line-height: 1.54;
+  color: #111111;
+  text-transform: uppercase;
+}
+.programms .programm-diet .programm-diet__descr {
+  font-size: 14px;
+  line-height: 1.29;
+  color: #444444;
+}
+.programms .programm-diet .catalog .catalog__link {
+  font-size: 16px;
+  line-height: 1;
+  color: #111111;
+  text-decoration: none;
+}
+.programms .programm-mass {
+  background-color: #f2f2f2;
+  width: 280px;
+  height: 266px;
+  margin: 20px auto;
+}
+.programms .programm-mass .programm-mass__circle {
+  width: 50px;
+  height: 51px;
+  background-color: #68b738;
+  border-radius: 50%;
+  text-transform: uppercase;
+}
+.programms .programm-mass .programm-mass__title {
+  font-size: 24px;
+  line-height: 1.54;
+  color: #111111;
+}
+.programms .programm-mass .programm-mass__descr {
+  font-size: 14px;
+  line-height: 1.29;
+  color: #444444;
+}
+.programms .programm-mass .catalog .catalog__link {
+  font-size: 16px;
+  line-height: 1;
+  color: #111111;
+  text-decoration: none;
+}
+.description {
+  margin-bottom: 40px;
+}
+.description .description__title {
+  font-size: 35px;
+  line-height: 1.67;
+  margin: 12px 76px 0 22px;
+}
+.description .content .content__square {
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+.description .content .content__wrapper {
+  list-style: none;
+  margin: 35px 44px 0px 20px;
+}
+.description .content .content__descr {
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 1.29;
+  color: #444444;
+}
+.example {
+  background-color: #f2f2f2;
+  margin-top: 20px;
+  padding: 33px 20px 38px 20px;
+}
+.example .example__title {
+  font-size: 36px;
+  line-height: 1.67;
+  color: #111111;
+}
+.example .example__description {
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 1.29;
+  color: #444444;
+}
+.example .plus .plus__kilos--number {
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+}
+.example .plus .plus__kilos--descr {
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+}
+.example .plus .plus__days--number {
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+}
+.example .plus .plus__days--descr {
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+}
+.example .result__cost {
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+}
+.example .toggle .toggle__before {
+  font-size: 16px;
+  line-height: 1.25;
+}
+.example .toggle .toggle__after {
+  font-size: 16px;
+  line-height: 1.25;
+}
+.page-footer {
+  background-color: #f2f2f2;
+  padding: 30px 20px 22px 20px;
+}
+.page-footer .copyright .copyright__icon-link {
+  font-family: "Arial";
+  font-size: 16px;
+  line-height: 1;
+  color: #444444;
+  text-decoration: none;
+}
+.gift {
+  background-image: url(../../img/gift-photo-mobile@1x.jpg);
+  min-height: 289px;
+  margin: 0 20px;
+}
+.cooperation {
+  padding: 33px 25px 28px 19px;
+}
+.cooperation .cooperation__invitation {
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.cooperation .cooperation__address {
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 1.43;
+}
+.catalog {
+  padding: 31px 20px 25px 20px;
+}
+.catalog .catalog__title {
+  font-size: 36px;
+  line-height: 1.67;
+}
+.catalog .catalog__item {
+  list-style: none;
+}
+.more-products {
+  padding: 27px 20px 25px 20px;
+}
+.more-products .more-products__title {
+  font-size: 16px;
+  line-height: 1.25;
+}
+.more-products .more-products__descr {
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 1.33;
+  color: #444444;
+}
+.more-products .more-products__button {
+  font-family: "Oswald", sans-serif;
+  background-color: #f2f2f2;
+  color: #444444;
+}
+.extra-goods {
+  padding: 31px 20px 39px 20px;
+}
+.extra-goods .extra-goods__title {
+  font-size: 24px;
+  line-height: 1;
+}
+.extra-goods .item .item__title {
+  font-size: 16px;
+  line-height: 1;
+}
+.extra-goods .item .item__button {
+  width: 280px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: normal;
+}
+.extra-goods .item .info .info__volume {
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 1;
+  color: #444444;
+}
+.extra-goods .item .info .info__price {
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 1;
+  color: #444444;
+}
+.form-wrapper {
+  padding: 30px 20px 34px 20px;
+}
+.form-wrapper .form {
+  border: 0 none;
+}
+.form-wrapper .form .form__title {
+  font-size: 35px;
+  line-height: 1.67;
+}
+.form-wrapper .form .form__header {
+  font-size: 14px;
+  line-height: 1.29;
+}
+.form-wrapper .form label {
+  font-size: 16px;
+  line-height: 1.13;
+}
+.button {
+  width: 280px;
+  height: 40px;
+  line-height: 1.25;
+  font-size: 16px;
+}
+.item .item__button {
+  background-color: #68b738;
+  color: #ffffff;
+}
+.product .product__link-title {
+  text-decoration: none;
+}
+.product .product__title {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #111111;
+}
+.params .params__attributes {
+  list-style: none;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 1.33;
+  color: #444444;
+}
+.params .params__substance {
+  list-style: none;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 1.33;
+  color: #444444;
+}
