@@ -6,17 +6,18 @@
 
 @font-face {
   font-family: "Oswald";
-  src: url('../fonts/oswaldregular.woff2')
-         format('woff2'),
-       url('../fonts/oswaldregular.woff')
-         format('woff');
+  src: url('../fonts/oswaldregular.woff2') format('woff2'),
+       url('../fonts/oswaldregular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
 }
 
 body {
   width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
 }
 h1 {
   margin: 0;
@@ -33,7 +34,6 @@ h1 {
 @import "blocks/_catalog.less";
 @import "blocks/_more-products.less";
 @import "blocks/_extra-goods.less";
-@import "blocks/_gift.less";
 @import "blocks/_form.less";
 @import "base/_button.less";
 @import "blocks/_catalog-item.less";
