@@ -1,0 +1,44 @@
+.catalog-extra{
+  padding: 27px 20px 25px 20px;
+  .catalog-extra__title {
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: normal;
+    color: @text-black;
+  }
+  .catalog-extra__descr {
+    font-family: "Arial", "Tahoma", sans-serif;
+    font-size: 12px;
+    line-height: 1.33;
+    color: @text-grey;
+  }
+  .catalog-extra__button {
+    font-family: "Oswald", sans-serif;
+    background-color: @bg-lightgrey;
+    color: @text-grey;
+  }
+}
+@media (min-width: @tablet-width) {
+
+}
+@media (min-width: @desktop-width) {
+  .catalog-extra {
+    .catalog-extra__plus img {
+      width: 61px;
+      height: 61px;
+      opacity: 0.2;
+    }
+    .catalog-extra__title {
+      font-size: 20px;
+      line-height: 1;
+    }
+    .catalog-extra__descr {
+      font-size: 16px;
+      line-height: normal;
+    }
+    .catalog-extra__button {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}

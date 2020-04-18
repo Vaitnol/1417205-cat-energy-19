@@ -1,0 +1,33 @@
+.programm {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  &-item {
+    margin-bottom: 20px;
+
+  }
+}
+@media (min-width: @tablet-width) {
+  .programm {
+    width: 768px;
+    &-item {
+      height: 372px;
+    }
+  }
+}
+@media (min-width: @desktop-width) {
+  .programm {
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    padding: 0 110px;
+    &-item {
+      width: 570px;
+      height: 372px;
+    }
+    &-item:nth-child(1) {
+      margin-right: 80px
+    }
+  }
+}

@@ -22,3 +22,31 @@
     color: @text-white;
   }
 }
+@media (min-width: @tablet-width) {
+  .catalog-item {
+    width: 324px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .catalog-item {
+    width: 245px;
+    height: 431px;
+    margin-right: 80px;
+    .catalog-item__subtitle {
+      font-size: 20px;
+      line-height: 1;
+    }
+    .catalog-item__characteristic {
+      font-size: 16px;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .catalog-item:nth-child(4) {
+    margin-right: 0;
+  }
+  .catalog-item:nth-child(8) {
+    margin-right: 0;
+  }
+}
