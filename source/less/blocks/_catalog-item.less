@@ -10,11 +10,16 @@
     color: @text-black;
   }
   .catalog-item__characteristic {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     font-family: "Arial", "Tahoma", sans-serif;
     font-size: 12px;
     line-height: 1.33;
     color: @text-grey;
+  }
+  .catalog-item__characteristic li {
+    width: 50%;
   }
   .catalog-item__button {
     font-family: "Oswald", sans-serif;

@@ -7,6 +7,13 @@
 @tablet-width: 768px;
 @desktop-width: 1300px;
 
+html {
+  box-sizing: border-box;
+}
+*, *:after, *::before {
+  box-sizing: inherit;
+}
+
 @font-face {
   font-family: "Oswald";
   src: url('../fonts/oswaldregular.woff2') format('woff2'),
