@@ -7,24 +7,28 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="191" height="39" alt="CAT ENERGY">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="191" height="39" alt="CAT ENERGY">
+        </a>
+        <button class="page-header__toggle" type="button"></button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          Открыть меню
-        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
+            <hr>
             <li class="site-list__item site-list__item--active">
-              <a href="./index.html">ГЛАВНАЯ</a>
+              <a class="site-list__item--black" href="./index.html">ГЛАВНАЯ</a>
             </li>
+            <hr>
             <li class="site-list__item">
-              <a href="./catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
+              <a class="site-list__item--black" href="./catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
             </li>
-            <li class="site-list__item">
-              <a href="./form.html">ПОДБОР ПРОГРАММЫ</a>
+            <hr>
+            <li class="site-list__item site-list__item--black">
+              <a class="site-list__item--black" href="./form.html">ПОДБОР ПРОГРАММЫ</a>
             </li>
+            <hr>
           </ul>
         </div>
       </nav>
