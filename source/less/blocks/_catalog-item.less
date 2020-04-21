@@ -1,5 +1,8 @@
 .catalog-item {
   list-style: none;
+  .catalog-item__wrapper {
+    display: flex;
+  }
   .catalog-item__link-title {
     text-decoration: none;
   }
@@ -10,15 +13,48 @@
     color: @text-black;
   }
   .catalog-item__characteristic {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     font-family: "Arial", "Tahoma", sans-serif;
     font-size: 12px;
     line-height: 1.33;
     color: @text-grey;
   }
+  .catalog-item__characteristic li {
+    width: 50%;
+  }
   .catalog-item__button {
     font-family: "Oswald", sans-serif;
     background-color: @bg-icons;
     color: @text-white;
+  }
+}
+@media (min-width: @tablet-width) {
+  .catalog-item {
+    width: 324px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .catalog-item {
+    width: 245px;
+    height: 431px;
+    margin-right: 80px;
+    .catalog-item__subtitle {
+      font-size: 20px;
+      line-height: 1;
+    }
+    .catalog-item__characteristic {
+      font-size: 16px;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .catalog-item:nth-child(4) {
+    margin-right: 0;
+  }
+  .catalog-item:nth-child(8) {
+    margin-right: 0;
   }
 }

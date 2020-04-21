@@ -4,6 +4,16 @@
 @text-white: #ffffff;
 @text-grey: #444444;
 
+@tablet-width: 768px;
+@desktop-width: 1300px;
+
+html {
+  box-sizing: border-box;
+}
+*, *:after, *::before {
+  box-sizing: inherit;
+}
+
 @font-face {
   font-family: "Oswald";
   src: url('../fonts/oswaldregular.woff2') format('woff2'),
@@ -14,7 +24,7 @@
 }
 
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
@@ -23,22 +33,25 @@ h1 {
   margin: 0;
 }
 
-@import "blocks/_page-header.less";
-@import "blocks/_promo.less";
-@import "blocks/_programm.less";
-@import "blocks/_description.less";
+@import "blocks/header/_page-header.less";
+@import "blocks/header/_main-nav.less";
+@import "blocks/header/_site-list.less";
+@import "blocks/main/_promo.less";
+@import "blocks/main/_programm.less";
+@import "blocks/main/_programm-item.less";
+@import "blocks/main/_description.less";
+@import "blocks/main/_description-item.less";
 @import "blocks/_example.less";
-@import "blocks/_page-footer.less";
 @import "blocks/_gift.less";
 @import "blocks/_cooperation.less";
 @import "blocks/_catalog.less";
-@import "blocks/_more-products.less";
+@import "blocks/_catalog-extra.less";
 @import "blocks/_extra-goods.less";
 @import "blocks/_form.less";
 @import "base/_button.less";
 @import "blocks/_catalog-item.less";
-@import "blocks/_site-list.less";
-@import "blocks/_copyright.less";
 @import "blocks/_example-descr.less";
 @import "blocks/_example-result.less";
 @import "blocks/_example-button.less";
+@import "blocks/footer/_page-footer.less";
+@import "blocks/footer/_copyright.less";

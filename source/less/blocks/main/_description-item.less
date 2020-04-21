@@ -1,0 +1,37 @@
+.description-item {
+  list-style: none;
+  &__square {
+    width: 60px;
+    height: 60px;
+    background-color: @bg-icons;
+  }
+  &__descr {
+    font-family: "Arial", "Tahoma", sans-serif;
+    font-size: 14px;
+    line-height: 1.29;
+    color: @text-grey;
+  }
+}
+@media (min-width: @tablet-width) {
+  .description-item {
+    width: 201px;
+    margin-right: 183px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .description-item {
+    margin-right: 88px;
+    width: 239px;
+    &__square {
+      width: 80px;
+      height: 80px;
+    }
+    &__descr {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+  .description-item:nth-child(4) {
+    margin-right: 0;
+  }
+}

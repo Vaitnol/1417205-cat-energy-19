@@ -8,24 +8,28 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="191" height="39" alt="CAT ENERGY">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="191" height="39" alt="CAT ENERGY">
+        </a>
+        <button class="page-header__toggle" type="button"></button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          Открыть меню
-        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
+            <hr>
             <li class="site-list__item site-list__item--active">
-              <a href="./index.html">ГЛАВНАЯ</a>
+              <a class="site-list__item--white"href="./index.html">ГЛАВНАЯ</a>
             </li>
+            <hr>
             <li class="site-list__item">
-              <a href="./catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
+              <a class="site-list__item--white" href="./catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
             </li>
+            <hr>
             <li class="site-list__item">
-              <a href="./form.html">ПОДБОР ПРОГРАММЫ</a>
+              <a class="site-list__item--white" href="./form.html">ПОДБОР ПРОГРАММЫ</a>
             </li>
+            <hr>
           </ul>
         </div>
       </nav>
@@ -42,7 +46,7 @@
             ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!
           </p>
         </header>
-        <img class="promo__image-can" src="./img/index-can-mobile@1x.png" alt="">
+        <img class="promo__image-can" src="./img/index-can-mobile@1x.png" width="280" height="270" alt="cat energy pro">
         <button class="button promo__button" type="button">ПОДОБРАТЬ ПРОГРАММУ</button>
       </section>
 
@@ -195,7 +199,6 @@
           <img class="copyright__logo" src="./img/htmlacademy.svg" width="27" height="34" alt="logo">
         </a>
       </div>
-    </div>
   </footer>
 
   </body>

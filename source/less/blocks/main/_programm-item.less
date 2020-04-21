@@ -1,31 +1,57 @@
 .programm-item {
   background-color: @bg-lightgrey;
-  width: 280px;
   height: 266px;
-  margin: 0 auto;
-  .programm-item__circle {
+  &__header {
+    display: flex;
+  }
+  &__circle {
     width: 50px;
     height: 51px;
     background-color: @bg-icons;
     border-radius: 50%;
   }
-  .programm-item__title {
+  &__title {
     font-size: 24px;
     line-height: 1.54;
     font-weight: normal;
     color: @text-black;
     text-transform: uppercase;
   }
-  .programm-item__descr {
+  &__descr {
     font-family: "Arial", "Tahoma", sans-serif;
     font-size: 14px;
     line-height: 1.29;
     color: @text-grey;
   }
-  .programm-item__link {
+  &__link {
     font-size: 16px;
     line-height: 1;
     color: @text-black;
     text-decoration: none;
+  }
+}
+@media (min-width: @tablet-width) {
+  .programm-item {
+    height: 372px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .programm-item {
+
+    &__circle {
+      width: 100px;
+      height: 100px;
+    }
+    &__title {
+      font-size: 36px;
+      line-height: 1.03;
+    }
+    &__descr {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    &__link {
+      font-size: 20px;
+    }
   }
 }
