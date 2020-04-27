@@ -1,6 +1,9 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  margin-top: 22px;
   &__icon-link {
     font-family: "Arial", "Tahoma", sans-serif;
     font-size: 16px;
@@ -8,12 +11,20 @@
     color: @text-grey;
     text-decoration: none;
   }
+  &__logo-link {
+  }
 }
 @media (min-width: @tablet-width) {
   .copyright {
+    width: 165px;
+    justify-content: flex-end;
+    margin-top: 0;
+    &__icon-link {
+      margin-right: 23px;
+    }
     &__logo {
-      width: 128px;
-      height: 24px;
+      width: 27px;
+      height: 34px;
     }
   }
 }

@@ -1,18 +1,30 @@
 .catalog-item {
   list-style: none;
-  .catalog-item__wrapper {
-    display: flex;
+  width: 280px;
+  &::before {
+    content: '';
+    display: block;
+    width: 320px;
+    border: solid 1px #ededed;
+    margin-left: -20px;
   }
-  .catalog-item__link-title {
+  &__content {
+    margin-top: 25px;
+  }
+  &__wrapper {
+    display: flex;
+    width: 280px;
+  }
+  &__link-title {
     text-decoration: none;
   }
-  .catalog-item__subtitle {
+  &__subtitle {
     font-size: 16px;
     line-height: 1.25;
     font-weight: normal;
     color: @text-black;
   }
-  .catalog-item__characteristic {
+  &__characteristic {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -20,19 +32,60 @@
     font-size: 12px;
     line-height: 1.33;
     color: @text-grey;
+    margin-top: 18px;
   }
-  .catalog-item__characteristic li {
+  &__characteristic li {
     width: 50%;
   }
-  .catalog-item__button {
+  &__button {
     font-family: "Oswald", sans-serif;
     background-color: @bg-icons;
     color: @text-white;
+    margin-bottom: 25px;
   }
 }
 @media (min-width: @tablet-width) {
   .catalog-item {
     width: 324px;
+    height: 431px;
+    background-color: @bg-lightgrey;
+    padding: 0 37px;
+    margin-top: 140px;
+    &__content {
+      margin-top: 165px;
+    }
+    &::before {
+      display: none;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
+    &__wrapper {
+      flex-direction: column;
+      position: relative;
+    }
+    &__image-link {
+      position: absolute;
+    }
+    &__characteristic {
+      margin-top: 28px;
+      font-size: 16px;
+      line-height: 1;
+      &--line {
+        width: 249px;
+        height: 1px;
+        background-color: grey;
+        border: solid 1px #ededed;
+      }
+    }
+    &__characteristic--line {
+      width: 249px;
+      height: 1px;
+      background-color: grey;
+    }
+    &__button {
+      margin-top: 33px;
+    }
   }
 }
 @media (min-width: @desktop-width) {
@@ -49,6 +102,10 @@
       line-height: 1;
       margin: 0;
       padding: 0;
+    }
+    &__button {
+      width: 169px;
+      height: 40px;
     }
   }
   .catalog-item:nth-child(4) {

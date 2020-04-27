@@ -1,21 +1,38 @@
 .catalog-extra{
-  padding: 27px 20px 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &::after {
+    content: '';
+    display: block;
+    width: 320px;
+    border: solid 1px #ededed;
+    margin-left: -20px;
+  }
+  &__plus {
+    display: block;
+    margin-top: 27px;
+  }
   .catalog-extra__title {
     font-size: 16px;
     line-height: 1.25;
     font-weight: normal;
     color: @text-black;
+    margin-top: 25px;
   }
   .catalog-extra__descr {
     font-family: "Arial", "Tahoma", sans-serif;
     font-size: 12px;
     line-height: 1.33;
     color: @text-grey;
+    margin-top: 11px;
   }
   .catalog-extra__button {
     font-family: "Oswald", sans-serif;
     background-color: @bg-lightgrey;
     color: @text-grey;
+    margin-top: 22px;
+    margin-bottom: 25px;
   }
 }
 @media (min-width: @tablet-width) {

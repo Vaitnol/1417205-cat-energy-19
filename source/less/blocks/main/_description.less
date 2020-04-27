@@ -3,38 +3,49 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
+  padding: 0 27px 0 20px;
   &__title {
     font-size: 36px;
     line-height: 1.67;
     font-weight: normal;
     color: @text-black;
+    margin-bottom: 35px;
   }
   &-content {
     margin: 0;
     padding: 0;
   }
 }
+
 @media (min-width: @tablet-width) {
   .description {
     width: 768px;
     margin-bottom: 138px;
-    margin-top: 60px;
+    margin-top: 40px;
+    &__title {
+      font-size: 60px;
+      line-height: 1;
+      margin-bottom: 63px;
+    }
     &-content {
       display: flex;
       flex-wrap: wrap;
     }
   }
 }
+
 @media (min-width: @desktop-width) {
   .description {
-    width: 1440px;
+    width: 100%;
     padding: 0 110px;
     &__title {
       font-size: 60px;
       line-height: 1;
       align-self: start;
+      margin-bottom: 63px;
     }
     &-content {
+      justify-content: space-between;
       margin: 0;
       padding: 0;
     }
