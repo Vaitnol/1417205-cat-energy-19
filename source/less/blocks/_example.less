@@ -2,16 +2,60 @@
   background-color: @bg-lightgrey;
   margin-top: 20px;
   padding: 33px 20px 38px 20px;
-  .example__title {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 10px;
+  &__title {
     font-size: 36px;
     line-height: 1.67;
     color: @text-black;
   }
-  .example__description {
+  &__description {
     font-family: "Arial", "Tahoma", sans-serif;
     font-size: 14px;
     line-height: 1.29;
     color: @text-grey;
+    margin-top: 33px;
+  }
+  &-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
   }
 }
-
+@media (min-width: @tablet-width) {
+  .example {
+    width: 768px;
+    height: 1080px;
+    padding: 51px 31px 68px 31px;
+    background: linear-gradient(to top, @bg-lightgrey 50%, white 50%);
+    &__title {
+      font-size: 60px;
+      line-height: 1;
+    }
+    &__description {
+      width: 676px;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-top: 60px;
+    }
+  }
+}
+@media (min-width: @desktop-width) {
+  .example {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 110px;
+    height: 652px;
+    background: none;
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    &__description {
+      width: 430px;
+    }
+  }
+}

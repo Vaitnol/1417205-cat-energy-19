@@ -13,21 +13,21 @@
     display: block;
     margin-top: 27px;
   }
-  .catalog-extra__title {
+  &__title {
     font-size: 16px;
     line-height: 1.25;
     font-weight: normal;
     color: @text-black;
     margin-top: 25px;
   }
-  .catalog-extra__descr {
+  &__descr {
     font-family: "Arial", "Tahoma", sans-serif;
     font-size: 12px;
     line-height: 1.33;
     color: @text-grey;
     margin-top: 11px;
   }
-  .catalog-extra__button {
+  &__button {
     font-family: "Oswald", sans-serif;
     background-color: @bg-lightgrey;
     color: @text-grey;
@@ -36,24 +36,50 @@
   }
 }
 @media (min-width: @tablet-width) {
-
-}
-@media (min-width: @desktop-width) {
   .catalog-extra {
-    .catalog-extra__plus img {
+    &::after {
+      display: none;
+    }
+    &__plus {
+      margin-top: 55px;
+    }
+    &__plus img {
       width: 61px;
       height: 61px;
       opacity: 0.2;
     }
-    .catalog-extra__title {
-      font-size: 20px;
+    &__title {
+      width: 133px;
+      font-size: 19px;
       line-height: 1;
+      margin-top: 50px;
+      text-align: center;
     }
-    .catalog-extra__descr {
-      font-size: 16px;
+    &__descr {
+      width: 165px;
+      font-size: 15px;
       line-height: normal;
+      margin-top: 28px;
+      text-align: center;
     }
-    .catalog-extra__button {
+    &__button {
+      width: 249px;
+      height: 40px;
+      background-color: @bg-lightgrey;
+      margin-top: 85px;
+    }
+  }
+}
+@media (min-width: @desktop-width) {
+  .catalog-extra {
+    &__plus img {
+      width: 61px;
+      height: 61px;
+      opacity: 0.2;
+    }
+    &__button {
+      width: 169px;
+      height: 40px;
       font-size: 16px;
       line-height: 1.25;
     }

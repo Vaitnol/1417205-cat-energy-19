@@ -1,26 +1,26 @@
 .extra-goods {
   padding: 31px 20px 39px 20px;
-  .extra-goods__title {
+  &__title {
     font-size: 24px;
     line-height: 1;
   }
-  .extra-goods__subtitle {
+  &__subtitle {
     font-size: 16px;
     line-height: 1;
   }
-  .extra-goods__volume {
+  &__volume {
     font-family: "Arial", "Tahoma", sans-serif;
     font-size: 14px;
     line-height: 1;
     color: @text-grey;
   }
-  .extra-goods__price {
+  &__price {
     font-family: "Arial", "Tahoma", sans-serif;
     font-size: 14px;
     line-height: 1;
     color: @text-grey;
   }
-  .extra-goods__button {
+  &__button {
     display: block;
     width: 280px;
     height: 40px;
@@ -30,5 +30,79 @@
     line-height: 1.25;
     text-decoration: none;
     text-align: center;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: @tablet-width) {
+  .extra-goods {
+    width: 768px;
+    margin: 0 auto;
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 140px;
+      border: solid 1px #cdcdcd;
+      padding: 28px 37px;
+      margin-right: 0;
+    }
+    &__title {
+      font-size: 36px;
+      margin-top: 71px;
+      margin-bottom: 75px;
+    }
+    &__subtitle {
+      width: 50%;
+      font-size: 20px;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      height: 13px;
+    }
+    &__volume {
+      font-size: 16px;
+    }
+    &__price {
+      font-size: 16px;
+    }
+    &__button {
+      display: block;
+      width: 633px;
+      height: 40px;
+      padding-top: 10px;
+      margin-top: 24px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra-goods {
+    width: auto;
+    min-height: 288px;
+    padding-left: 10%;
+    &__wrapper {
+      width: 895px;
+    }
+    &__content {
+      flex-wrap: nowrap;
+      height: 71px;
+      border-right: none;
+      border-left: none;
+      justify-content: space-between;
+      padding: 0 0;
+    }
+    &__info {
+      width: 283px;
+      margin-right: 39px;
+    }
+    &__button {
+      width: 245px;
+      height: 40px;
+      margin-top: 0;
+    }
   }
 }

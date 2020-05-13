@@ -1,4 +1,6 @@
 .site-list {
+  margin: 0;
+  padding: 0;
   &__item {
     list-style: none;
     text-align: center;
@@ -17,6 +19,13 @@
     text-decoration: none;
     color: @text-black;
   }
+  &__item--black {
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    color: @text-black;
+  }
   hr {
     width: 100%;
     margin: 0;
@@ -26,8 +35,11 @@
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
-    justify-content: space-between;
-    width: 437px;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 437px;
+    width: 57%;
+    margin: 0 auto;
     &__item--active {
       &::after {
         content: '';
@@ -53,8 +65,8 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
-    width: 477px;
-    line-height: 1.25;
+    width: 33%;
+    min-width: 477px;
     &__item--active {
       &::after {
         content: '';

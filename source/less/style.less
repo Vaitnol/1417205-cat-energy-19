@@ -3,9 +3,11 @@
 @text-black: #111111;
 @text-white: #ffffff;
 @text-grey: #444444;
-
+@mobile-width: 767px;
 @tablet-width: 768px;
 @desktop-width: 1300px;
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
 
 html {
   box-sizing: border-box;
@@ -33,9 +35,13 @@ h1, h2, p, hr, ul {
   margin: 0;
   padding: 0;
 }
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
 
 @import "blocks/header/_page-header.less";
-@import "blocks/header/_main-nav.less";
 @import "blocks/header/_site-list.less";
 @import "blocks/main/_promo.less";
 @import "blocks/main/_programm.less";
@@ -49,6 +55,8 @@ h1, h2, p, hr, ul {
 @import "blocks/_catalog-extra.less";
 @import "blocks/_extra-goods.less";
 @import "blocks/_form.less";
+@import "blocks/_form-wrapper.less";
+@import "blocks/_map.less";
 @import "base/_button.less";
 @import "blocks/_catalog-item.less";
 @import "blocks/_example-descr.less";

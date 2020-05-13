@@ -1,18 +1,393 @@
-.form-wrapper {
-  padding: 30px 20px 34px 20px;
-}
 .form {
-  border: 0 none;
-  .form__title {
-    font-size: 35px;
-    line-height: 1.67;
-  }
-  .form__header {
+  width: 280px;
+  &__header {
+    width: 230px;
     font-size: 14px;
+    font-weight: normal;
     line-height: 1.29;
+    text-transform: uppercase;
+    margin-bottom: 39px;
   }
-  label {
+  &__name {
     font-size: 16px;
     line-height: 1.13;
+    text-transform: uppercase;
+    &--input {
+      width: 229px;
+      height: 45px;
+      opacity: 0.5;
+      border: solid 1px #cdcdcd;
+      margin-bottom: 14px;
+      margin-left: 13px;
+    }
+  }
+  &__weight {
+    font-size: 16px;
+    line-height: 1.13;
+    text-transform: uppercase;
+    &--input {
+      width: 204px;
+      height: 45px;
+      opacity: 0.5;
+      border: solid 1px #cdcdcd;
+      margin-left: 12px;
+      margin-bottom: 14px;
+    }
+  }
+  &__age {
+    font-size: 16px;
+    line-height: 1.13;
+    text-transform: uppercase;
+    &--input {
+      width: 172px;
+      height: 45px;
+      opacity: 0.5;
+      border: solid 1px #cdcdcd;
+      margin-left: 11px;
+      margin-bottom: 23px;
+    }
+  }
+  &__radio-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    height: 158px;
+    border: solid 1px #ededed;
+    padding-left: 20px;
+    margin-bottom: 31px;
+  }
+  &__radio {
+    font-size: 16px;
+    line-height: 1.13;
+    text-transform: uppercase;
+    &--input {
+      width: 30px;
+      height: 30px;
+      border: solid 1px #cdcdcd;
+      background-color: #68b738;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 30px;
+    margin-top: 31px;
+  }
+  &__email {
+    font-size: 16px;
+    line-height: 1.13;
+    text-transform: uppercase;
+    &--input {
+      width: 219px;
+      height: 45px;
+      border: solid 1px #cdcdcd;
+      margin-bottom: 14px;
+      margin-left: 7px;
+    }
+  }
+  &__phone {
+    font-size: 16px;
+    line-height: 1.13;
+    text-transform: uppercase;
+    &--input {
+      width: 204px;
+      height: 45px;
+      border: solid 1px #cdcdcd;
+      margin-left: 5px;
+      margin-bottom: 31px;
+    }
+  }
+  &__comments {
+    width: 280px;
+    height: 150px;
+    border: solid 1px #cdcdcd;
+    margin-bottom: 31px;
+  }
+  &__checkbox--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__checkbox {
+    font-size: 16px;
+    line-height: 1.13;
+    text-transform: uppercase;
+    &--input {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #cdcdcd;
+      margin-right: 16px;
+    }
+  }
+  &__button {
+    margin-top: 34px;
+    margin-bottom: 23px;
+    width: 280px;
+    height: 40px;
+    background-color: @bg-icons;
+    color: @text-white;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  &__note {
+    font-family: "Arial", "Tahoma", sans-serif;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    color: #444444;
+  }
+}
+@media (min-width: @tablet-width) {
+  .form {
+    width: 629px;
+    &__header {
+      width: 322px;
+      font-size: 19px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      margin-bottom: 69px;
+    }
+    &__name {
+      font-size: 20px;
+      line-height: 1;
+      &--input {
+        width: 567px;
+        height: 52px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+      }
+    }
+    &__weight {
+      font-size: 20px;
+      line-height: 1;
+      &--input {
+        width: 536px;
+        height: 52px;
+        margin-left: 13px;
+        margin-bottom: 20px;
+      }
+    }
+    &__age {
+      font-size: 20px;
+      line-height: 1;
+      &--input {
+        width: 497px;
+        height: 52px;
+        margin-left: 11px;
+        margin-bottom: 72px;
+      }
+    }
+    &__radio-wrapper {
+      width: 630px;
+      height: 196px;
+      padding-left: 20px;
+      margin-bottom: 31px;
+    }
+    &__radio {
+      font-size: 20px;
+      line-height: 1;
+      &--input {
+        width: 40px;
+        height: 40px;
+        border: solid 1px #cdcdcd;
+        background-color: #000000;
+      }
+    }
+    &__title {
+      font-size: 36px;
+      margin-bottom: 79px;
+      margin-top: 70px;
+    }
+    &__email {
+      font-size: 20px;
+      line-height: 1;
+      &--input {
+        width: 551px;
+        height: 52px;
+        margin-bottom: 20px;
+        margin-left: 11px;
+      }
+    }
+    &__phone {
+      font-size: 20px;
+      line-height: 1;
+      &--input {
+        width: 535px;
+        height: 52px;
+        margin-left: 6px;
+        margin-bottom: 69px;
+      }
+    }
+    &__comments {
+      width: 631px;
+      height: 174px;
+      margin-bottom: 69px;
+    }
+    &__checkbox--wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &__checkbox {
+      font-size: 19px;
+      line-height: 1;
+      width: 219px;
+      &--input {
+        width: 40px;
+        height: 40px;
+        border: solid 1px #cdcdcd;
+        margin-right: 16px;
+      }
+    }
+    &__checkbox:nth-child(1) {
+      margin-right: 125px;
+      margin-bottom: 32px;
+    }
+    &__checkbox:nth-child(3) {
+      margin-right: 126px;
+    }
+    &__button {
+      margin-top: 54px;
+      margin-bottom: 72px;
+      margin-right: 61px;
+      width: 283px;
+      height: 52px;
+      font-size: 20px;
+      line-height: 1;
+    }
+    &__note {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    width: 1220px;
+    margin: 0 auto;
+    &__header {
+      width: 322px;
+      font-size: 19px;
+      line-height: 1.5;
+      margin-bottom: 39px;
+    }
+    &__data-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 568px;
+    }
+    &__name {
+      &--input {
+        width: 506px;
+        height: 52px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+      }
+    }
+    &__weight {
+      &--input {
+        width: 475px;
+        height: 52px;
+        margin-left: 13px;
+        margin-bottom: 20px;
+      }
+    }
+    &__age {
+      &--input {
+        width: 436px;
+        height: 52px;
+        margin-left: 11px;
+        margin-bottom: 72px;
+      }
+    }
+    &__radio-wrapper {
+      width: 570px;
+      height: 196px;
+      padding-left: 20px;
+      margin-bottom: 31px;
+    }
+    &__radio {
+      font-size: 20px;
+      line-height: 1;
+      &--input {
+        width: 40px;
+        height: 40px;
+        border: solid 1px #cdcdcd;
+        background-color: #000000;
+      }
+    }
+    &__title {
+      font-size: 36px;
+      margin-bottom: 79px;
+      margin-top: 70px;
+    }
+    &__email {
+      font-size: 20px;
+      line-height: 1;
+      &--input {
+        width: 486px;
+        height: 52px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 82px;
+      }
+    }
+    &__phone {
+      font-size: 20px;
+      line-height: 1;
+      &--input {
+        width: 472px;
+        height: 52px;
+        margin-left: 10px;
+        margin-bottom: 69px;
+      }
+    }
+    &__comments {
+      width: 1220px;
+      height: 174px;
+      margin-bottom: 69px;
+    }
+    &__checkbox--wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__checkbox {
+      font-size: 19px;
+      line-height: 1;
+      width: 219px;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      &--input {
+        width: 40px;
+        height: 40px;
+        border: solid 1px #cdcdcd;
+        margin-right: 16px;
+      }
+    }
+    &__checkbox:nth-child(1) {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+    &__checkbox:nth-child(3) {
+      margin-right: 0;
+    }
+    &__button {
+      margin-top: 54px;
+      margin-bottom: 72px;
+      margin-right: 61px;
+      margin-left: 45px;
+      width: 568px;
+      height: 52px;
+      font-size: 20px;
+      line-height: 1;
+    }
+    &__note {
+      display: inline;
+    }
   }
 }

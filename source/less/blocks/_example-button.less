@@ -1,13 +1,41 @@
 .example-button {
-  .example-button__before {
+  &__before {
     font-size: 16px;
     line-height: 1.25;
     color: @text-black;
+    border: none;
+    outline: none;
   }
-  .example-button__after {
+  &__animation {
+    width: 84px;
+    height: 14px;
+    border-radius: 6px;
+    border: solid 1px #cdcdcd;
+    background-color: white;
+  }
+  &__after {
     font-size: 16px;
     line-height: 1.25;
     color: @text-black;
+    border: none;
+    outline: none;
+  }
+}
+@media (min-width: @tablet-width) {
+  .example-button {
+    &__before {
+    }
+    &__animation {
+      width: 428px;
+      height: 6px;
+      border-radius: 2.5px;
+      background-color: #dcdcdc;
+    }
+    &__after {
+    }
   }
 }
 
+@media (min-width: @desktop-width) {
+
+}
