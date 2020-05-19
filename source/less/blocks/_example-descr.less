@@ -25,7 +25,7 @@
     text-align: center;
     margin-top: 4px;
   }
-  &__cost {
+  &__cost  h3 {
     font-size: 14px;
     line-height: 1.43;
     text-align: center;
@@ -41,6 +41,10 @@
   .example-descr {
     margin-top: 57px;
     &__cost {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__cost h3 {
       font-size: 20px;
       line-height: 1;
       margin-right: 0;
@@ -48,12 +52,34 @@
       text-transform: uppercase;
       text-align: right;
     }
+    &__cost h3:nth-child(1) {
+      margin-right: 73px;
+    }
+    &__info-weigth {
+      width: 114px;
+      background-color: @bg-lightgrey;
+      margin-top: 7px;
+    }
+    &__info-time {
+      width: 142px;
+      background-color: @bg-lightgrey;
+      margin-top: 7px;
+    }
     &__info {
       width: 162px;
+      align-items: center;
+      span br {
+        display: none;
+      }
     }
   }
 }
 
 @media (min-width: @desktop-width) {
-
+  .example-descr {
+    width: 366px;
+    &__cost br {
+      display: none;
+    }
+  }
 }

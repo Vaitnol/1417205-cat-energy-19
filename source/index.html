@@ -18,7 +18,7 @@
         </a>
         <button class="page-header__toggle" type="button"></button>
       </div>
-<!--       <nav class="main-nav"> -->
+      <nav class="page-header__main-nav">
         <ul class="site-list">
           <hr>
           <li class="site-list__item site-list__item--active">
@@ -34,7 +34,7 @@
           </li>
           <hr>
         </ul>
-<!--       </nav> -->
+       </nav>
     </header>
 
     <main class="page-main">
@@ -139,15 +139,16 @@
           <div class="example-descr">
             <div class="example-descr__info">
               <span>5 КГ</span>
-              <span>снижение<br> веса</span>
+              <span class="example-descr__info-weigth">снижение<br> веса</span>
             </div>
             <div class="example-descr__info">
               <span>60 ДНЕЙ</span>
-              <span>затрачено<br> времени</span>
+              <span class="example-descr__info-time">затрачено<br> времени</span>
             </div>
-            <h3 class="example-descr__cost">
-              Затраты на питание:<br> 15 000 руб.
-            </h3>
+            <div class="example-descr__cost">
+              <h3>Затраты на питание:</h3>
+              <h3>15 000 руб.</h3>
+            </div>
           </div>
         </div>
         <div class="example__wrapper">
@@ -155,7 +156,12 @@
             <picture>
               <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
-              <img class="example-result__img" src="./img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Изображение сидящего кота">
+              <img class="example-result__img-before" src="./img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Изображение кота до принятия корма">
+            </picture>
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+              <img class="example-result__img-after" src="./img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Изображение кота после приянтия корма">
             </picture>
           </div>
           <div class="example-button">
@@ -163,6 +169,10 @@
               БЫЛО
             </button>
             <div class="example-button__animation">
+              <div class="example-button__circle">
+                <div class="example-button__circle--green">
+                </div>
+              </div>
             </div>
             <button type="button" class="example-button__after">
               СТАЛО
@@ -171,20 +181,19 @@
         </div>
       </section>
 
-      <div class="cooperation cooperation-main">
-        <p class="cooperation__invitation">
-          приглашаем
-          к сотрудничеству
-          дилеров!
-        </p>
-        <p class="cooperation__address">
-          ул. Большая Конюшенная, д. 19/8
-
-          Санкт-Петербург
-        </p>
-      </div>
-
       <div class="map">
+        <div class="cooperation cooperation-main">
+          <p class="cooperation__invitation">
+            приглашаем
+            к сотрудничеству
+            дилеров!
+          </p>
+          <p class="cooperation__address">
+            ул. Большая Конюшенная, д. 19/8
+
+            Санкт-Петербург
+          </p>
+        </div>
         <picture>
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">

@@ -17,7 +17,7 @@
         </a>
         <button class="page-header__toggle" type="button"></button>
       </div>
- <!--      <nav class="main-nav"> -->
+      <nav class="page-header__main-nav">
         <ul class="site-list">
           <hr>
           <li class="site-list__item site-list__item--active">
@@ -33,7 +33,7 @@
           </li>
           <hr>
         </ul>
-<!--       </nav> -->
+       </nav>
     </header>
 
     <main class="page-main">
@@ -45,33 +45,35 @@
             Заполните анкету и мы подберем
             программу питания для вашего кота
           </legend>
-          <div class="form__data-wrapper">
-            <label class="form__name" for="name">
-              Имя:*
-              <input class="form__name--input" type="text" id="name" placeholder="Барсик" required>
-            </label>
-            <label class="form__weight" for="weight">
-              Вес (кг):*
-              <input class="form__weight--input" type="text" id="weight" placeholder="7" required>
-            </label>
-            <label class="form__age" for="age">
-              Возраст (лет):
-              <input class="form__age--input" type="text" id="age" placeholder="7">
-            </label>
-          </div>
-          <div class="form__radio-wrapper">
-            <label class="form__radio" for="losing-weight">
+          <div class="form__fieldset">
+            <div class="form__data-wrapper">
+              <label class="form__name" for="name">
+                Имя:*
+                <input class="form__name--input" type="text" id="name" placeholder="Барсик" required>
+              </label>
+              <label class="form__weight" for="weight">
+                Вес (кг):*
+                <input class="form__weight--input" type="text" id="weight" placeholder="7" required>
+              </label>
+              <label class="form__age" for="age">
+                Возраст (лет):
+                <input class="form__age--input" type="text" id="age" placeholder="7">
+              </label>
+            </div>
+            <div class="form__radio-wrapper">
               <input class="form__radio--input" name="radio" type="radio" id="losing-weight">
-              Похудение
-            </label>
-            <label class="form__radio" for="mass">
+              <label class="form__radio" for="losing-weight">
+                Похудение
+              </label>
               <input class="form__radio--input" name="radio" type="radio" id="mass">
-              Набор массы
-            </label>
-            <label class="form__radio" for="advice">
+              <label class="form__radio" for="mass">
+                Набор массы
+              </label>
               <input class="form__radio--input" name="radio" type="radio" id="advice">
-              Не знаю (Нужен ваш совет)
-            </label>
+              <label class="form__radio" for="advice">
+                Не знаю (Нужен ваш совет)
+              </label>
+            </div>
           </div>
         </fieldset>
         <fieldset class="form">
@@ -99,20 +101,20 @@
             Дополнительно
           </legend>
           <div class="form__checkbox--wrapper">
-            <label class="form__checkbox">
-              <input class="form__checkbox--input" type="checkbox" checked>
+            <input class="form__checkbox--input" type="checkbox" id="sugar" checked>
+            <label class="form__checkbox" for="sugar">
               Сахарозаменитель
             </label>
-            <label class="form__checkbox">
-              <input class="form__checkbox--input" type="checkbox">
+            <input class="form__checkbox--input" type="checkbox" id="water">
+            <label class="form__checkbox" for="water">
               Питьевая вода
             </label>
-            <label class="form__checkbox">
-              <input class="form__checkbox--input" type="checkbox">
+            <input class="form__checkbox--input" type="checkbox" id="milk">
+            <label class="form__checkbox" for="milk">
               Молоко
             </label>
-            <label class="form__checkbox">
-              <input class="form__checkbox--input" type="checkbox">
+            <input class="form__checkbox--input" type="checkbox" id="vitamins">
+            <label class="form__checkbox" for="vitamins">
               Витамины
             </label>
           </div>
@@ -123,19 +125,19 @@
         </p>
       </form>
 
-      <section class="cooperation cooperation-form">
-        <p class="cooperation__invitation">
-          приглашаем
-          к сотрудничеству
-          дилеров!
-        </p>
-        <p class="cooperation__address">
-          ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург
-        </p>
-      </section>
-
       <div class="map">
+        <div class="cooperation cooperation-main">
+          <p class="cooperation__invitation">
+            приглашаем
+            к сотрудничеству
+            дилеров!
+          </p>
+          <p class="cooperation__address">
+            ул. Большая Конюшенная, д. 19/8
+
+            Санкт-Петербург
+          </p>
+        </div>
         <picture>
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">

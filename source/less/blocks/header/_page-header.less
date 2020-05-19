@@ -42,12 +42,22 @@
     &__toggle {
       display: none;
     }
+    &__main-nav {
+      min-width: 437px;
+      width: 57%;
+      margin: 0 auto;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
+    margin-top: 38px;
     width: auto;
+    &__main-nav {
+      width: 33%;
+      min-width: 477px;
+    }
     &__wrapper {
       min-width: 203px;
       width: 14%;

@@ -37,9 +37,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-width: 437px;
-    width: 57%;
-    margin: 0 auto;
     &__item--active {
       &::after {
         content: '';
@@ -65,14 +62,14 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
-    width: 33%;
-    min-width: 477px;
+    position: relative;
     &__item--active {
       &::after {
         content: '';
+        position: absolute;
         display: block;
         margin-top: 12px;
-        border: 2px solid #ffffff;
+        border: 1px solid #ffffff;
         width: 68px;
       }
     }

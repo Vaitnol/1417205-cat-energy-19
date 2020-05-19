@@ -268,6 +268,10 @@
   .form {
     width: 1220px;
     margin: 0 auto;
+    &__fieldset {
+      display: flex;
+      justify-content: space-between;
+    }
     &__header {
       width: 322px;
       font-size: 19px;
@@ -313,16 +317,51 @@
       font-size: 20px;
       line-height: 1;
       &--input {
+        display: none;
+      }
+      &--input + label {
+        vertical-align: middle;
+        color: #7f8c8d;
+      }
+      &--input + label::before {
+        content: '';
+        display: inline-block;
         width: 40px;
         height: 40px;
+        margin-right: 8px;
+        vertical-align: middle;
         border: solid 1px #cdcdcd;
-        background-color: #000000;
+        border-radius: 50%;
+      }
+      &--input:checked + label::before {
+        background-color: #68b738;
       }
     }
     &__title {
       font-size: 36px;
       margin-bottom: 79px;
       margin-top: 70px;
+      overflow: hidden;
+       &::before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        height: 3px;
+        background-color: @bg-icons;
+        position: relative;
+        margin-left: -100%;
+      }
+      &::after {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        height: 3px;
+        background-color: @bg-icons;
+        position: relative;
+        margin-right: -100%;
+      }
     }
     &__email {
       font-size: 20px;
@@ -363,10 +402,27 @@
       align-items: center;
       margin: 0;
       &--input {
+        display: none;
+      }
+      &--input {
+      }
+      &--input + label {
+        vertical-align: middle;
+        color: #7f8c8d;
+      }
+      &--input + label::before {
+        content: '';
+        display: inline-block;
         width: 40px;
         height: 40px;
-        border: solid 1px #cdcdcd;
-        margin-right: 16px;
+        margin-right: 8px;
+        vertical-align: middle;
+        border: 3px solid #ffffff;
+        box-shadow: 0 0 0 3px #bdc3c7;
+      }
+      &--input:checked + label::before {
+        background: #1abc9c;
+        box-shadow: 0 0 0 3px #1abc9c;
       }
     }
     &__checkbox:nth-child(1) {
