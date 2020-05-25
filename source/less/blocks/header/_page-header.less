@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   width: auto;
+  position: relative;
   &__wrapper {
     display: flex;
     align-items: center;
@@ -18,8 +19,55 @@
     opacity: 0.6;
   }
   &__toggle {
+    position: absolute;
+    right: 19px;
+    top: 10px;
     width: 25px;
     height: 19px;
+    cursor: pointer;
+      span, span::before, span::after {
+        width: 100%;
+        position: absolute;
+        height: 3px;
+        background: #222222;
+        display: block;
+        transition: .3s;
+        border-radius: 5px;
+      }
+      span::before {
+        content: "";
+        top: -10px;
+        transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      span {
+        top: 20px;
+      }
+      span:after {
+        content: "";
+        bottom: -10px;
+        transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      span.active::before {
+        content: "";
+        top: 0px;
+        transform: rotate(45deg);
+        transition: top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      span.active::after {
+        content: "";
+        bottom: 0;
+        transform: rotate(-45deg);
+        transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      span.active{
+        background: rgba(255, 255, 255, 0);
+      }
+  }
+  &__main-nav {
+    display: none;
+  }
+  &__show {
+    display: block;
   }
 }
 
@@ -30,6 +78,9 @@
     justify-content: space-around;
     width: auto;
     margin-top: 53px;
+    hr {
+      display: none;
+    }
     &__wrapper {
       width: 25%;
       min-width: 174px;
@@ -43,6 +94,7 @@
       display: none;
     }
     &__main-nav {
+      display: block;
       min-width: 437px;
       width: 57%;
       margin: 0 auto;

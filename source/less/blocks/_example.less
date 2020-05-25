@@ -11,16 +11,12 @@
     color: @text-black;
   }
   &__description {
+    width: 266px;
     font-family: "Arial", "Tahoma", sans-serif;
     font-size: 14px;
     line-height: 1.29;
     color: @text-grey;
     margin-top: 33px;
-  }
-  &-button {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 35px;
   }
 }
 @media (min-width: @tablet-width) {
@@ -28,7 +24,7 @@
     width: 768px;
     height: 1080px;
     padding: 51px 31px 68px 31px;
-    background: linear-gradient(to top, @bg-lightgrey 80%, white 50%);
+    background: linear-gradient(to top, @bg-lightgrey 50%, white 50%);
     &__title {
       font-size: 60px;
       line-height: 1;
@@ -54,7 +50,7 @@
       flex-direction: column;
     }
     &__description {
-      width: 430px;
+      width: 432px;
     }
   }
 }

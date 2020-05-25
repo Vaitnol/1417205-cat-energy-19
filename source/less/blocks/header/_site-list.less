@@ -34,12 +34,14 @@
 
 @media (min-width: @tablet-width) {
   .site-list {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     &__item--active {
       &::after {
         content: '';
+        position: absolute;
         display: block;
         margin-top: 12px;
         border: 2px solid @bg-icons;
@@ -55,7 +57,7 @@
     line-height: 1.39;
   }
   hr {
-    display: none;
+
   }
 }
 

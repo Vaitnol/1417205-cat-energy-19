@@ -1,11 +1,21 @@
 .gift {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url(../img/gift-photo-mobile@1x.jpg);
   min-height: 289px;
   margin: 0 20px;
+  &__image {
+    margin-top: 65px;
+  }
   &__descr {
+    font-family: "Arial", "Tahoma", sans-serif;
+    width: 159px;
     color: white;
     font-weight: normal;
     line-height: 1.25;
+    margin-top: 64px;
+    text-align: center;
   }
 }
 @media (min-width: @tablet-width) {
@@ -18,14 +28,11 @@
     width: 708px;
     min-height: 200px;
     margin: 0 auto;
-    margin-bottom: 76px;
     &__image {
       margin-right: 277px;
       color: white;
     }
     &__descr {
-      width: 159px;
-      height: 56px;
       font-size: 16px;
     }
   }
@@ -35,11 +42,11 @@
     flex-direction: column;
     width: 245px;
     height: 289px;
-    background: url(../img/gift-photo-desktop@1x.jpg) no-repeat;
+    background: url('../img/gift-photo-desktop@1x.jpg') no-repeat;
     position: absolute;
     z-index: 2;
     right: 10%;
-    top: 209%;
+    top: 214%;
     margin-top: 0;
     margin-bottom: 0;
     &__image {

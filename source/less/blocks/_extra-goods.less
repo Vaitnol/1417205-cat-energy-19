@@ -1,12 +1,28 @@
 .extra-goods {
-  padding: 31px 20px 39px 20px;
+  width: 320px;
+  margin: 0 auto;
+  hr {
+    margin-top: 17px;
+  }
+  &__wrapper {
+    margin-bottom: 39px;
+    padding: 31px 20px 0 20px;
+  }
   &__title {
     font-size: 24px;
     line-height: 1;
+    margin-bottom: 30px;
   }
   &__subtitle {
     font-size: 16px;
+    font-weight: normal;
     line-height: 1;
+    text-transform: uppercase;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
   }
   &__volume {
     font-family: "Arial", "Tahoma", sans-serif;
@@ -31,12 +47,16 @@
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
+    padding: 10px 110px;
   }
 }
 @media (min-width: @tablet-width) {
   .extra-goods {
     width: 768px;
     margin: 0 auto;
+    hr {
+      display: none;
+    }
     &__content {
       display: flex;
       flex-wrap: wrap;
