@@ -2,4 +2,61 @@
   background-image: url(../img/gift-photo-mobile@1x.jpg);
   min-height: 289px;
   margin: 0 20px;
+  &__image {
+    margin-top: 65px;
+  }
+  &__descr {
+    font-family: "Arial", "Tahoma", sans-serif;
+    width: 159px;
+    color: white;
+    font-weight: normal;
+    line-height: 1.25;
+    margin-top: 64px;
+    text-align: center;
+  }
+}
+@media (min-width: @tablet-width) {
+  .gift {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/gift-photo-tablet@1x.jpg) no-repeat;
+    margin-top: 30px;
+    width: 708px;
+    min-height: 200px;
+    margin: 0 auto;
+    &__image {
+      margin-right: 277px;
+      color: white;
+    }
+    &__descr {
+      font-size: 16px;
+    }
+  }
+}
+@media (min-width: @desktop-width) {
+  .gift {
+    flex-direction: column;
+    width: 245px;
+    height: 289px;
+    background: url('../img/gift-photo-desktop@1x.jpg') no-repeat;
+    position: absolute;
+    z-index: 2;
+    right: 10%;
+    top: 214%;
+    margin-top: 0;
+    margin-bottom: 0;
+    &__image {
+      margin-right: 0;
+      margin-top: 50px;
+    }
+    &__descr {
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.25;
+      width: 159px;
+    }
+  }
 }

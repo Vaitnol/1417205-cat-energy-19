@@ -1,26 +1,12 @@
-@bg-lightgrey: #f2f2f2;
-@bg-icons: #68b738;
-@text-black: #111111;
-@text-white: #ffffff;
-@text-grey: #444444;
-
-@tablet-width: 768px;
-@desktop-width: 1300px;
+@import './base/_variables.less';
+@import './libs/_font.less';
 
 html {
   box-sizing: border-box;
 }
+
 *, *:after, *::before {
   box-sizing: inherit;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url('../fonts/oswaldregular.woff2') format('woff2'),
-       url('../fonts/oswaldregular.woff') format('woff');
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
 }
 
 body {
@@ -29,8 +15,26 @@ body {
   padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
 }
-h1 {
+
+h1, h2, p, hr, ul {
   margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__index {
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat 100%;
+    background-position: 100% 0;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
+  }
 }
 
 @import "blocks/header/_page-header.less";
@@ -41,17 +45,19 @@ h1 {
 @import "blocks/main/_programm-item.less";
 @import "blocks/main/_description.less";
 @import "blocks/main/_description-item.less";
-@import "blocks/_example.less";
+@import "blocks/main/_example.less";
+@import "blocks/main/_example-descr.less";
+@import "blocks/main/_example-button.less";
+@import "blocks/main/_example-result.less";
+@import "blocks/catalog/_catalog.less";
+@import "blocks/catalog/_catalog-extra.less";
+@import "blocks/catalog/_catalog-item.less";
+@import "blocks/catalog/_extra-goods.less";
+@import "blocks/form/_form.less";
+@import "blocks/form/_form-wrapper.less";
 @import "blocks/_gift.less";
 @import "blocks/_cooperation.less";
-@import "blocks/_catalog.less";
-@import "blocks/_catalog-extra.less";
-@import "blocks/_extra-goods.less";
-@import "blocks/_form.less";
+@import "blocks/_map.less";
 @import "base/_button.less";
-@import "blocks/_catalog-item.less";
-@import "blocks/_example-descr.less";
-@import "blocks/_example-result.less";
-@import "blocks/_example-button.less";
 @import "blocks/footer/_page-footer.less";
 @import "blocks/footer/_copyright.less";

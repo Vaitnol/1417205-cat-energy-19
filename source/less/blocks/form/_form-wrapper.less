@@ -1,0 +1,31 @@
+.form-wrapper {
+  padding: 30px 20px 34px 20px;
+  width: 320px;
+  margin: 0 auto;
+  &__title {
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1.67;
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: @tablet-width) {
+  .form-wrapper {
+    width: 768px;
+    padding: 0 67px 0 72px;
+    &__title {
+      font-size: 60px;
+      line-height: 1;
+      margin-top: 63px;
+      margin-bottom: 53px;
+    }
+  }
+}
+@media (min-width: @desktop-width) {
+  .form-wrapper {
+    width: 1440px;
+    &__title {
+      margin-top: 81px;
+    }
+  }
+}
